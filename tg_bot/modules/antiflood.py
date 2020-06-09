@@ -35,7 +35,7 @@ def check_flood(bot: Bot, update: Update) -> str:
 
     try:
         chat.kick_member(user.id)
-        msg.reply_text("താൻ എന്തൊരു വെറുപ്പിക്കൽ ആണെടോ... ഇങ്ങനെ നിർത്താതെ മെസ്സേജ് അയച്ചാൽ മറ്റുള്ളവർക്ക് ശല്യം ആകില്ലേ.... തന്നെ ഇനി ഈ ഗ്രൂപ്പിന് ആവിശ്യം ഇല്ല ഇറങ്ങി പൊക്കോ....")
+        msg.reply_text("നിർത്താത്ത മെസേജ് ഇട്ടാൽ....അത് കീരികാടന് ശല്യം ആവും കേട്ടോ!.")
 
         return "<b>{}:</b>" \
                "\n#BANNED" \
@@ -90,7 +90,7 @@ def set_flood(bot: Bot, update: Update, args: List[str]) -> str:
                                                                     mention_html(user.id, user.first_name), amount)
 
         else:
-            message.reply_text("താങ്കൾ പറയുന്നത് എനിക്ക് മനസ്സിലാകുന്നില്ല.... ഒന്നെങ്കിൽ number ഉപയോഗിക്കുക അല്ലെങ്കിൽ Yes-No  ഉപയോഗിക്കുക ")
+            message.reply_text("താങ്കൾ പറഞ്ഞത് കീരികാടന് മനസ്സിലായിട്ടില്ല!....... ഒന്നെങ്കിൽ number ഉപയോഗിക്കുക അല്ലെങ്കിൽ Yes-No  ഉപയോഗിക്കുക ")
 
     return ""
 
