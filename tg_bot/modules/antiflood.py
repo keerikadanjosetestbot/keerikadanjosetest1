@@ -104,7 +104,7 @@ def flood(bot: Bot, update: Update):
         update.effective_message.reply_text("ഞാൻ ഇപ്പോൾ മെസ്സേജ് നിയന്ത്രണം നടത്തുന്നില്ല !")
     else:
         update.effective_message.reply_text(
-            " {} മെസ്സേജിൽ കൂടുതൽ ഒരേ സമയം അയക്കുന്ന ആളെ ഞാൻ ബൺ കൊടുത്ത് വിടുന്നതാണ്.".format(limit))
+            " {} മഒരേ സമയം കൂടുതൽ മെസ്സേജ് അയകുന്നവരെ ജോസ് പുറത്താകും കേട്ടോ....!.".format(limit))
 
 
 def __migrate__(old_chat_id, new_chat_id):
