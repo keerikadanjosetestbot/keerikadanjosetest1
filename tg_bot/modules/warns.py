@@ -104,7 +104,7 @@ def button(bot: Bot, update: Update) -> str:
         user_id = match.group(1)
         chat = update.effective_chat  # type: Optional[Chat]
         if not is_user_admin(chat, int(user.id)):
-            query.answer(text="ചീള് പിള്ളേർസ് ADMIN അല്ല എന്നിട്ട് REMOVE WARN അമർത്താൻ വന്നിരിക്കുന്നു", show_alert=True)
+            query.answer(text="കീരികാടൻ ജോസ് ഇന്റെ പണി വേരോരുത്തനും ചെയ്യണ്ട", show_alert=True)
             return ""
         res = sql.remove_warn(user_id, chat.id)
         if res:
@@ -144,7 +144,7 @@ def warn_user(bot: Bot, update: Update, args: List[str]) -> str:
         else:
             return warn(chat.get_member(user_id).user, chat, reason, message, warner)
     else:
-        message.reply_text("ആരെയാണ് warn ചെയ്യേണ്ടത് എന്നു പറഞ്ഞില്ലല്ലോ?")
+        message.reply_text("ആരെയാണ് warn ചെയ്യേണ്ടത് എന്ന് കീരികാടനോട് പറഞ്ഞില്ല")
     return ""
 
 
